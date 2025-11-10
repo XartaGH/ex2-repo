@@ -1,0 +1,31 @@
+  402  cd C/Users/mrx/Desktop/gitprep/ex2
+  403  git init
+  408  echo "*.log" > .gitignore
+  409  git status
+  410  git add .
+  411  git commit -m "Release project"
+  412  git checkout -h
+  413  git checkout -b branch1
+  415  git status
+  416  git add .
+  417  git commit -m "Update feature"
+  418  git switch main
+  421  git status
+  422  git add .
+  423  git commit -m "Update main"
+  424  git merge branch1
+  425  git merge branch1
+  426  git status
+  427  git merge branch1
+  428  git add .
+  429  git status
+  430  git merge branch1
+  431  git commit -m "Merge branch1"
+  432  git status
+  433  git log --oneline --graph
+  434  git remote add origin git@github.com:XartaGH/ex2-repo.git
+  435  git branch -h
+  436  git push -u origin main
+  437  git pull
+  438  Get-History | ? CommandLine -match "git" | % CommandLine > ex2.txt
+  439  history | grep git > ex2.txt
